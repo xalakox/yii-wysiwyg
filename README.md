@@ -10,3 +10,5 @@ Download it to your extensions folder and you can use it as follows :
             "filespath"=>(!$model->isNewRecord)?Yii::app()->basePath."/../media/paquetes/".$model->idpaquete."/":"",
             "filesurl"=>(!$model->isNewRecord)?Yii::app()->baseUrl."/media/paquetes/".$model->idpaquete."/":"",
     ) );
+
+If you want to contribute please just ask; I do this on my free time so all the help is appreciated.
