@@ -78,7 +78,7 @@ class CKkceditor extends CInputWidget
     {
       foreach ($this->config as $key=>$value)
       {
-        $oCKeditor->Config[$key] = $value;
+        $oCKeditor->config[$key] = $value;
       }
     }
     if ($this->filespath&&$this->filesurl) {		  
