@@ -63,8 +63,8 @@ class CKkceditor extends CInputWidget
 	if (!empty($this->model) && $ok)
     {    
       $oCKeditor = new CKeditor();
-      $this->value = $this->model->$ok;
-      $this->name = get_class($this->model).'['.$this->attribute.']';
+	  $this->value = CHtml::resolveValue( $this->model, $this->attribute );
+	  list( $this->name, $id ) = $this->resolveNameID();
     }
     elseif (!empty($this->name))
     {
